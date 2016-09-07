@@ -22,7 +22,17 @@ print icy_hot(1, 99)
 print icy_hot(-1, 99)
 print icy_hot(101, 1)
 
-# TODO - write closer_to
+def closer_to(g, a, b):
+	if abs(g) - abs(a) > abs(g) - abs(b):
+		return a
+	if abs(g) - abs(b) > abs(g) - abs(a):
+		return b
+	else: return 0
+
+print closer_to(5, 6, 10)
+print closer_to(6, 10, 5)
+print closer_to(-7, -8, -8)
+print closer_to(-7, -8, -11)
 
 # TODO - write two_as_one
 
