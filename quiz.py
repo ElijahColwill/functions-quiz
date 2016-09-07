@@ -42,5 +42,3 @@ print two_as_one(7, 4, 3)
 print two_as_one(4, 7, 3)
 print two_as_one(1, 7, 11)
 print two_as_one(-4, -1, -5)
-
-# TODO - write pig_latinify
