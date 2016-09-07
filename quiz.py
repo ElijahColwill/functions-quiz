@@ -34,6 +34,13 @@ print closer_to(6, 10, 5)
 print closer_to(-7, -8, -8)
 print closer_to(-7, -8, -11)
 
-# TODO - write two_as_one
+def two_as_one(a, b, c):
+	return (a + b) == c or (a + c) == b or (c + b) == a
+
+print two_as_one(4, 3, 7)
+print two_as_one(7, 4, 3)
+print two_as_one(4, 7, 3)
+print two_as_one(1, 7, 11)
+print two_as_one(-4, -1, -5)
 
 # TODO - write pig_latinify
