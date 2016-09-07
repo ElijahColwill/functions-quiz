@@ -13,10 +13,14 @@ def not_string(str):
 
 print not_string(" welcome here.")
 print not_string("Not welcome here? ")
-print not_string("Not cool? ")
-print not_string("Cool. ")
 
-# TODO - write icy_hot
+def icy_hot(temp1, temp2):
+	return (temp1 > 100 or temp2 > 100) or (temp1 < 0 or temp2 < 0)
+
+print icy_hot(-1, 112)
+print icy_hot(1, 99)
+print icy_hot(-1, 99)
+print icy_hot(101, 1)
 
 # TODO - write closer_to
 
