@@ -21,12 +21,20 @@ print icy_hot(-1, 112)
 print icy_hot(1, 99)
 print icy_hot(-1, 99)
 print icy_hot(101, 1)
+print icy_hot(-1, -2)
+print icy_hot(101, 101)
 
 def closer_to(g, a, b):
-	if abs(g) - abs(a) > abs(g) - abs(b):
-		return a
-	if abs(g) - abs(b) > abs(g) - abs(a):
-		return b
+	if abs(a) > abs(g) or abs(b) > abs(g):
+		if abs(g) - abs(a) > abs(g) - abs(b):
+			return a
+		if abs(g) - abs(b) > abs(g) - abs(a):
+			return b
+	if abs(a) < abs(g) or abs(b) < abs(g):
+		if abs(g) - abs(a) < abs(g) - abs(b):
+			return a
+		if abs(g) - abs(b) < abs(g) - abs(a):
+			return b
 	else: return 0
 
 print closer_to(5, 6, 10)
