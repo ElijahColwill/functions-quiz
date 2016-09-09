@@ -15,8 +15,11 @@ print not_string(" welcome here.")
 print not_string("Not welcome here? ")
 
 def icy_hot(temp1, temp2):
-	return temp1 > 100 or temp2 > 100 or temp1 < 0 or temp2 < 0
-
+	if temp1 > 100:
+		return temp2 < 0
+	if temp2 > 100:
+		return temp1 < 0
+	
 print icy_hot(-1, 112)
 print icy_hot(1, 99)
 print icy_hot(-1, 99)
